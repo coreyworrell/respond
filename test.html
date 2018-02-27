@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Respond.js</title>
+        <style>
+            div {
+                display: flex;
+            }
+
+            span {
+                flex: 1 0 250px;
+            }
+
+            div[data-state="mid"] span {
+                flex-basis: 200px;
+            }
+
+            div[data-state="narrow"] span {
+                flex-basis: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>One</span>
+            <span>Two</span>
+            <span>Three</span>
+            <span>Four</span>
+        </div>
+        <div>
+            <span>One</span>
+            <span>Two</span>
+            <span>Three</span>
+            <span>Four</span>
+        </div>
+        <button data-add>Add</button>
+        <script src="./test.js"></script>
+    </body>
+</html>
